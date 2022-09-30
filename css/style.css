@@ -1369,7 +1369,9 @@ footer a{
 /*=======Media query max-width 730px=======*/
 @media screen and (max-width: 730px){
   /*=======Common styles for all sections=======*/
-  body{
+  html,body{
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 5rem 0 0 0;
   }
 
@@ -1381,12 +1383,20 @@ footer a{
     font-size: 2em;
     transform: translateY(-65px);
   }
-
-
+  /* light/dark-theme  */
+  .theme-btn{
+    margin-top: -25px;
+    position: absolute;
+  }
+  /* scroll To Top Btn */
+  .scrollToTop-btn{
+    visibility: hidden;
+  }
 
   /*=======Home section=======*/
   .home .home-container{
     display: grid;
+    margin-bottom: 30px;
   }
 
   .home-container .home-img{
@@ -1397,6 +1407,7 @@ footer a{
     border-radius: 10px;
     width: 65%;
     transform: translate(80px, -180px);
+    margin-bottom: 30px;
   }
 
   .home .home-container .info{
